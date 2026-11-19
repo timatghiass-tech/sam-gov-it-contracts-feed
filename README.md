@@ -1,45 +1,22 @@
-# US Federal IT & Software Contract Leads Feed (SAM.gov)
+# SAM.gov Federal IT & Software Contracts Daily CSV Feed (NAICS 541511, 541512, 518210)
 
-An automated data pipeline that extracts, deduplicates, and normalizes active US Federal IT, Cloud, and Custom Software contract opportunities from **SAM.gov** on a daily basis.
+Automated daily data pipeline extracting, deduplicating, and normalizing active U.S. Federal IT, Cloud, and Custom Software solicitations from the official **SAM.gov Opportunities API** into a clean, ready-to-use CSV feed.
 
-Designed for GovCon capture managers, IT agencies, and B2G business development teams who want clean, actionable solicitations without spending hours manually filtering SAM.gov every morning.
+## Download Free 15-Lead Sample CSV
+Test the exact schema and live federal contract data before subscribing:
+👉 **[Download Free 15-Lead Sample CSV on Gumroad](https://rafaelmathias.gumroad.com/l/free-sam-gov-sample)**
 
----
+## Included Data Fields
+Each daily CSV update delivers structured columns ready for CRM import or capture review:
+- **Solicitation Title & Notice ID**
+- **Issuing Federal Agency & Sub-tier**
+- **NAICS Code** (Focused on `541511`, `541512`, `518210`, and adjacent IT codes)
+- **Set-Aside Status** (8(a), SDVOSB, WOSB, HUBZone, Small Business)
+- **Direct Contracting Officer (POC) Name, Email & Phone**
+- **Response Deadline**
+- **Direct SAM.gov Notice URL & Attachment Links**
 
-## 🎯 Target NAICS Sectors
-* **541511** — Custom Computer Programming Services
-* **541512** — Computer Systems Design Services
-* **518210** — Data Processing, Hosting, and Related Services
-* Adjacent federal IT, cybersecurity, and cloud modernization codes
-
----
-
-## 📊 Data Schema & Included Fields
-Every daily update delivers structured, UTF-8 normalized records containing:
-* **Notice ID & Solicitation Title**
-* **Department / Sub-tier Agency**
-* **NAICS Code & Set-Aside Status** (Small Business, 8(a), WOSB, SDVOSB, etc.)
-* **Response Deadline**
-* **Point of Contact (POC):** Direct Contracting Officer Name, Email, and Phone Number
-* **Direct Links:** Official SAM.gov notice URL and direct solicitation attachment links
-
----
-
-## 📂 Sample Dataset (Free)
-You can inspect the included [`sample_sam_leads.csv`](./sample_sam_leads.csv) file directly in this repository, or download the packaged free sample via Gumroad:
-
-👉 **[Download the Free 15-Lead Sample CSV ($0)](https://rafaelmathias.gumroad.com/l/free-sam-gov-sample)**
-
----
-
-## 🚀 Daily Live Feed Subscription
-Need fresh, active federal IT & software opportunities delivered automatically every day?
-
-👉 **[Get Full Daily Access on Gumroad](https://rafaelmathias.gumroad.com/l/sam-gov-it-leads)**
-
----
-
-## 🛠️ Tech Stack
-* **Data Source:** Official SAM.gov Opportunities API
-* **ETL & Automation:** Cloud-scheduled JavaScript / Google Apps Script pipeline
-* **Output Formats:** Normalized CSV & Live Cloud Spreadsheet
+## Target Use Cases
+- **GovCon Capture & BD Teams:** Eliminate manual morning searches on SAM.gov.
+- **IT & Software Small Businesses:** Identify active RFPs, RFQs, and Sources Sought notices with direct POC contacts.
+- **B2G Developers & Analysts:** Ingest clean, normalized federal procurement data without building API parsers.
